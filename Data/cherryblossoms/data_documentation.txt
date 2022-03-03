@@ -1,0 +1,28 @@
+sakura_first_bloom_dates.csv
+sakura_full_bloom_dates.csv
+
+--link: https://www.kaggle.com/ryanglasnapp/japanese-cherry-blossom-data?select=sakura_full_bloom_dates.csv
+--description: Cherry Blossom (Sakura) Bloom Dates from 1953 to 2020
+--columns: "Site Name", "Currently Being Observed", (Years from 1953 to 2020)
+
+KyotoFullFlower.xls
+
+--link: http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/
+--description: Full-flowering dates of Japanese cherry (Prunus jamasakura) at Kyoto, Japan from 801 to 2021
+--columns: "A.D.", "Full-flowering date (day of year)", "Full-flowering date (calender date)", "Source code", "Data type code", "Names of old documents"
+
+flowering.csv
+locations.csv
+--link: https://github.com/akg314/sakura
+--description: First flowering date in Japan from 1953 to 2018
+--columns: [flowering.csv] "l_code", "l_name", "year", "day", "rm"
+	   [locations.csv] "loc_names", "lon", "lat", "romaji", "l_code"
+--notes: 
+Might be able to replicate data extraction code to get data for updated 2019-2021, and also get the blossoming data as well. 
+See https://www.data.jma.go.jp/sakura/data/index.html for main source (**They also have data for other plants**); https://www.data.jma.go.jp/sakura/data/pdf/004.pdf for blooming data; https://www.data.jma.go.jp/sakura/data/pdf/005.pdf for full flowering data
+There's also data on the github that includes weather data, but needs more investigation on what the columns mean
+
+**Note that according to this Japanese website: https://sakura.weathermap.jp/en.php, 
+"First bloom" means observation trees have 5 to 6 flowers that have bloomed.
+"Full bloom" means 80% of the observation tree flowers have bloomed.
+
