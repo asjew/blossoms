@@ -1,0 +1,96 @@
+---
+title: "mapanimate"
+author: "Ashlyn Jew"
+date: "4/16/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(gganimate)
+library(gifski)
+library(tidyverse)
+```
+
+```{r}
+county_info <- map_data('world2', 'japan')
+county_info
+```
+
+```{r}
+base_map <- ggplot(data = county_info, mapping = aes(x = long, y = lat, group = group)) +
+ geom_polygon(colour = "grey50", fill = "white") +
+  coord_quickmap() +
+  theme_void() 
+base_map
+```
+```{r}
+bloom <- read_csv('long_first_bloom_latlon.csv')
+bloom$`First Bloom Date` <- lubridate::mdy(bloom$`First Bloom Date`)
+bloom['Month'] <- lubridate::month(bloom$`First Bloom Date`)
+bloom['Year'] <- lubridate::year(bloom$`First Bloom Date`)
+bloom <- bloom %>% drop_na(Month)
+bloom <- bloom %>% filter(Month == 1 | Month == 2 | Month == 3 | Month ==  4 | Month == 5)
+bloom <- bloom %>% filter(Year == 2021)
+bloom <- bloom %>% rename(`Month of First Bloom` = `Month First Bloom`)
+bloom$`Month of First Bloom` <- factor(bloom$`Month of First Bloom`, levels=c('January', 'March', 'April', 'May'))
+```
+
+```{r}
+bloom
+```
+
+```{r}
+map_with_data <- base_map +
+  geom_point(data = bloom, aes(x = Longitude, y = Latitude, group=Month))
+map_with_data
+```
+
+```{r}
+min_long <- min(bloom$Longitude)
+max_long <- max(bloom$Longitude)
+min_lat <- min(bloom$Latitude)
+max_lat <- max(bloom$Latitude)
+map_with_data <- map_with_data +
+  coord_quickmap(xlim = c(min_long, max_long),  ylim = c(min_lat, max_lat))
+map_with_data
+```
+
+```{r}
+map_with_data <- base_map +
+  geom_point(data = bloom, aes(x = Longitude, y = Latitude, group=Month, color=`Month of First Bloom`),shape = "\U1F338", size = 4)  +
+  coord_quickmap(xlim = c(min_long, max_long),  ylim = c(min_lat, max_lat)) + 
+  scale_colour_manual(values = c("#cac0ff", "#bce679", "#ffa6b4", "#97cfd0"))
+
+map_with_data
+```
+```{r}
+map_with_animation <- map_with_data +
+  transition_time(Month)
+num_years <- max(bloom$Month) - min(bloom$Month) + 1
+animate(map_with_animation, nframes = 20)
+```
+
+```{r}
+map_with_shadow <- map_with_animation +
+  shadow_mark()
+animate(map_with_shadow, nframes = 25, fps = 5, detail = 3, renderer = gifski_renderer(loop = FALSE))
+```
+
+```{r}
+# anim_save("map.gif")
+```
+
+```{r}
+bloom <- read_csv('long_first_bloom_latlon.csv')
+bloom$`First Bloom Date` <- lubridate::mdy(bloom$`First Bloom Date`)
+bloom['Month'] <- lubridate::month(bloom$`First Bloom Date`)
+bloom['Year'] <- lubridate::year(bloom$`First Bloom Date`)
+bloom <- bloom %>% drop_na(Month)
+# write_csv(bloom, "long_first_bloom_latlonmonth")
+```
+
