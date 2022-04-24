@@ -7,15 +7,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Header */
-
 .column-container {
   background: #ffffff;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   height: calc(100vh - 72px);
-  display: flex;
   margin : 0;
   
 }
@@ -23,120 +20,95 @@ body {
 .column-header {
   float: left;
   width: 50%;
-  height: 500px;
   padding: 20px;
+}
+
+.title {
+  float: left;
+  width: 36vw;
 }
 
 .column-content {
   float: left;
-  width: 35%;
-  height: 500px;
+  width: 40%;
   padding: 20px;
 }
 
 header {
-  display: flex;
+
   /* align-items: center; */
   justify-content: space-between;
   position: fixed;
 }
 
 header h1 {
-
+  text-align: justify;
+  text-justify: inter-word;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 3.6vw;
+  line-height: 3.6vw;
   
   color: #000000;
   
 }
 
-header h2 {
+header h2{
+  text-align: justify;
+  text-justify: inter-word;
   font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 37px;
+  font-weight: bold;
+  font-size: 4.2vw;
+  line-height: 4.2vw;
   color: #A27378;
 }
 
-header p {
-  font-size: 24px;
-  line-height: 42px;
+p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 16px;
+  line-height: 24px;
   color: #021718;
-  width: 418px;
-
+  width: 100%;
   margin-bottom: 48px;
 }
 
-header a {
-  color: #fffffa;
-  font-size: 24px;
-  text-decoration: none;
+/* Cherry tree */
 
-  background: #01847f;
-  border-radius: 8px;
-  padding: 12px 48px;
-  display: inline-block;
-  transition: 300ms;
+.cherry-tree img{
+  width: 42%;
+  position: fixed;
+  bottom: 0;
+  left: 35px;
 }
 
-
-header .branches{
-  position: absolute;
+.blossoms:hover + .word-cloud{
+  display: block;
 }
 
-header .blossoms{
-  position: absolute;
-}
-
-header .blossoms:hover{
+.blossoms:hover{
   display: none;
 }
 
-header .word-cloud{
-  position: absolute;
-  display: flex;
+.word-cloud{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
-header .word-cloud:hover{
-  display: flex;
+.blossoms{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
-img{
-  width: 700px;
+
+.branches{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
-
-/* header .branches img{
-  position: absolute;
-} */
-
-
-/* Hero image */
-/* 
-header .hero-image {
-  position: relative;
-}
-
-header .hero-image img {
-  transition: 300ms;
-  position: relative;
-  z-index: 100;
-}
-
-header .hero-image img:hover {
-  transform: rotate(-6deg);
-}
-
-header .hero-image .photo-bg {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 45px;
-  top: 24px;
-
-  background: #44a1a0;
-  transform: rotate(-6deg);
-} */
-
