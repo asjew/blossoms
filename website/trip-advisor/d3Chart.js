@@ -53,10 +53,11 @@ async function drawChart(){
   .map(d => d[0])
   .slice(0, 10)
 
-  var height = 800
-  var width = 800
+  const canvas = document.getElementById("japan-container")
+  const context = canvas.getContext("2d");   
 
-  const context = document.getElementById("japan-container").getContext("2d");   
+  var height = canvas.height * 1.15
+  var width = canvas.width * 1.15
 
   
   var subRegions = topojson.feature(country, country.objects.japan)

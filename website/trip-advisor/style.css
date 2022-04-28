@@ -25,7 +25,7 @@ body {
 
 .column-header {
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 20px;
 }
 
@@ -37,7 +37,7 @@ body {
 .column-content {
   position: relative;
   float: left;
-  width: 40%;
+  width: 45%;
   padding: 20px;
 }
 
@@ -58,8 +58,8 @@ header h1 {
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.6vw;
-  line-height: 3.6vw;
+  font-size: 3.5vw;
+  line-height: 3.5vw;
   
   color: #000000;
   
@@ -73,6 +73,7 @@ header h2{
   font-size: 4.2vw;
   line-height: 4.2vw;
   color: #A27378;
+  transform: translateY(-3.5vw);
 }
 
 h3{
@@ -109,15 +110,22 @@ p{
 
 
 .word-cloud{
-  opacity: 0%;
-  display: block;
+  /* opacity: 0%; */
+  display: none;
 }
 
 .blossoms img{
+  /* display:none; */
   transition: 400ms;
 }
 
+
+.buds img{
+  display: none
+}
+
 .sun img{
+  /* display:none; */
   position: fixed;
   width: 42%;
   bottom: 0;
@@ -152,11 +160,13 @@ p{
 
 /* real word cloud */
 .real-word{
+  /* display:none; */
   position: fixed;
   font-family: '新細明體';
   bottom: 0;
   color: #f9ccdf;
   transition: 100ms
+  
 }
 
 .real-word:hover{
