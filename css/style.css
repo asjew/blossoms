@@ -1,0 +1,388 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Scrolling CSS */
+
+section {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Ashlyn's CSS */
+
+#chart {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  color: #A67277;
+}
+
+header h2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 10px;
+
+  color: #BC8F8F;
+}
+
+p {
+  text-align: left;
+  margin-top: 5px;
+}
+
+b {
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  color: #A67277;
+}
+
+.b2 {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  color: #BC8F8F;
+}
+
+.smallnote {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom:10px;
+}
+
+.column-container {
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  /* height: calc(100vh - 72px); */
+  margin : 0;
+  
+}
+
+.column-header {
+  float: left;
+  width: 25%;
+  /* width: 50%; */
+  padding: 20px;
+  position: fixed;
+}
+
+.title {
+  float: left;
+  width: 36vw;
+}
+
+.column-content {
+  font-family: 'Lato';
+  text-align: center;
+  float: right;
+  width: 50%;
+  padding-right: 5%;
+}
+/* 
+.column-content {
+  position: relative;
+  float: right;
+  width: 40%;
+  padding: 20px;
+} */
+
+.blossom-tree img{
+  width: 30%;
+  height: 70%;
+  position: fixed;
+  margin-top: 10px;
+  bottom: 0;
+  left: 0px;
+}
+
+.tableauPlaceholder {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Johannes's CSS */
+h3{
+  color: #A27378;
+}
+
+.cherry-tree{
+  position: fixed;
+}
+
+.cherry-tree img{
+  width: 42%;
+  position: fixed;
+  bottom: 0;
+  left: 35px;
+  /* border: black 1pt solid; */
+}
+
+
+ .blossoms img:hover{
+  opacity: 0;
+} 
+
+
+.word-cloud{
+  opacity: 0%;
+  display: block;
+}
+
+.blossoms img{
+  transition: 400ms;
+}
+
+.sun img{
+  position: fixed;
+  width: 42%;
+  bottom: 0;
+  left: 35px;
+}
+
+
+.quote img:hover + .sun img{
+  opacity: 100%;
+}
+
+.quote img:hover{
+  opacity: 50%;
+}
+
+/* dropdown list */
+
+.dropdown{
+  transform: translateY(150px);
+  position: relative;
+}
+
+/* quote */
+
+.quote img{
+  height: 90vh;
+  margin-left: 40%;
+  margin-top: 50px;
+  margin-right: auto;
+  transition: 400ms;
+}
+
+/* real word cloud */
+.real-word{
+  position: fixed;
+  font-family: '新細明體';
+  bottom: 0;
+  color: #f9ccdf;
+  transition: 100ms
+}
+
+.real-word:hover{
+  font-weight: 900;
+  
+  color: #fe91bf;
+  text-shadow: -1px 1px 0 #ffffff, 0 0 1px #ffffff;
+  transform: scale(1.5);
+}
+
+
+.w1 {
+  left: calc(35px + 13vw) ;
+  bottom: 9vw;
+  font-size: 1.7vw;
+  transform: rotate(-65deg);
+}
+
+.w2 {
+  left: calc(35px + 16.8vw) ;
+  bottom: 11vw;
+  font-size: 1.9vw;
+  transform: rotate(60deg);
+}
+
+
+.w3 {
+  left: calc(35px + 36vw) ;
+  bottom: 7vw;
+  font-size: 1.5vw;
+  transform: rotate(45deg);
+}
+
+
+.w4 {
+  left: calc(35px + 27vw) ;
+  bottom: 7.5vw;
+  font-size: 1.5vw;
+  transform: rotate(25deg);
+}
+
+
+.w5 {
+  left: calc(35px + 19vw) ;
+  bottom: 17vw;
+  font-size: 1.3vw;
+  transform: rotate(50deg);
+}
+
+
+.w6 {
+  left: calc(35px + 16vw) ;
+  bottom: 16vw;
+  font-size: 1.2vw;
+  transform: rotate(25deg);
+}
+
+
+.w7 {
+  left: calc(35px + 27.5vw) ;
+  bottom: 14vw;
+  font-size: 1.2vw;
+  transform: rotate(20deg);
+}
+
+
+.w8 {
+  left: calc(35px + 20vw) ;
+  bottom: 26vw;
+  font-size: 1.1vw;
+  transform: rotate(20deg);
+}
+
+
+.w9 {
+  left: calc(35px + 22.5vw) ;
+  bottom: 30vw;
+  font-size: 0.9vw;
+  transform: rotate(-50deg);
+}
+
+
+.w10 {
+  left: calc(35px + 10vw) ;
+  bottom: 15vw;
+  font-size: 0.9vw;
+  transform: rotate(-80deg);
+}
+
+
+.w11 {
+  left: calc(35px + 16vw) ;
+  bottom: 30vw;
+  font-size: .9vw;
+  transform: rotate(-15deg);
+}
+
+
+.w12 {
+  left: calc(35px + 27vw) ;
+  bottom: 11.5vw;
+  font-size: .8vw;
+  transform: rotate(-20deg);
+}
+
+
+.w13 {
+  left: calc(35px + 19.5vw) ;
+  bottom: 29vw;
+  font-size: .8vw;
+  transform: rotate(-40deg);
+}
+
+
+.w14 {
+  left: calc(35px + 21.5vw) ;
+  bottom: 31.5vw;
+  font-size: .8vw;
+  transform: rotate(-60deg);
+}
+
+
+.w15 {
+  left: calc(35px + 19vw) ;
+  bottom: 21.5vw;
+  font-size: 1.1vw;
+  transform: rotate(-30deg);
+}
+
+.w16 {
+  left: calc(35px + 11vw) ;
+  bottom: 17.5vw;
+  font-size: 1.1vw;
+  transform: rotate(50deg);
+}
+
+.w17 {
+  left: calc(35px + 18vw) ;
+  bottom: 10.5vw;
+  font-size: 1vw;
+  transform: rotate(-20deg);
+}
+
+.w18 {
+  left: calc(35px + 24vw) ;
+  bottom: 25.5vw;
+  font-size: 0.9vw;
+  transform: rotate(30deg);
+}
+
+.w19 {
+  left: calc(35px + 22vw) ;
+  bottom: 9vw;
+  font-size: .9vw;
+  transform: rotate(-20deg);
+}
+
+.w20 {
+  left: calc(35px + 26vw) ;
+  bottom: 12.5vw;
+  font-size: .9vw;
+  transform: rotate(-20deg);
+}
+
+.w21 {
+  left: calc(35px + 17.5vw) ;
+  bottom: 22.25vw;
+  font-size: .9vw;
+  transform: rotate(-23deg);
+}
