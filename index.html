@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,312 +13,416 @@
   <script src="js/scrolling.js"> </script>
 
 </head>
+
 <body>
   <!---------------------------------------------------------------->
   <!------------------ BLOOMING PATTERNS SECTIION ------------------>
   <!---------------------------------------------------------------->
   <!-- Animated line chart-->
   <section>
-  <div class="reveal fade-bottom">
-  <div class="column-container">
-    <div class="column-header">
-      <header>
-        <div class="title">
-          <h1>JAPAN'S PINK FLUSH</h1>
-          <h2>Cherry Blossom Blooming Patterns</h2>
+    
+      <div class="column-container">
+        <div class="reveal fade-bottom">
+          <div class="column-header">
+            <header>
+              <div class="title">
+                <h1>JAPAN'S PINK FLUSH</h1>
+                <h2>Cherry Blossom Blooming Patterns</h2>
+              </div>
+            </header>
+            <div class="cherry-tree">
+              <img src="assets/img/branches.png" alt="" />
+              <img src="assets/img/buds.png" alt="" />
+            </div>
+          </div>
         </div>
-      </header>
-      <div>
-        <div class="blossom-tree">
-          <img src="assets/img/Budsbranchbud.svg" alt="" width="100%"/>
+
+
+        <div class="column-content">
+          <div id="chart">
+            <script src="js/script.js"> </script>
+          </div>
+
+          <div class="smallnote">*According to the Japan Meteorology Agency,
+            "first bloom" refers to when observation trees have 5 to 6 flowers that have bloomed and
+            "full bloom" refers to when 80% of the observation tree flowers have bloomed.
+          </div>
+          <b>When do cherry blossoms bloom in Japan?</b>
+          <p>
+            Most cherry blossom first bloom dates in Japan fall in March, April, or May.
+            Over the years, more flowers are first blooming in March, while less and less have first bloom dates falling
+            in April or May.
+            In 2021, 78.46% of the cherry blossoms observed had a first bloom date in March. This is a stark contrast
+            from 1953, where only 30.32% of the cherry blossoms first bloomed in March.
+          </p>
+          <div class="b2"> If you are visiting the main popular cities (Tokyo, Kyoto, Osaka), you should travel in late
+            March or early April to catch most of the blooming beauties.</div>
+          <div class='tableauPlaceholder' id='viz1650967207243' style='position: relative'>
+            <noscript>
+              <a href='#'>
+                <img alt='Avg Days to Full Bloom '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;As&#47;Assignment5_EDA&#47;AvgDaystoFullBloom&#47;1_rss.png'
+                  style='border: none' />
+              </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='Assignment5_EDA&#47;AvgDaystoFullBloom' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;As&#47;Assignment5_EDA&#47;AvgDaystoFullBloom&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+            </object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1650967207243');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) { vizElement.style.width = '625px'; vizElement.style.height = '827px'; }
+            else if (divElement.offsetWidth > 500) { vizElement.style.width = '625px'; vizElement.style.height = '827px'; }
+            else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+
+          <b>How long does it take for the flowers to fully bloom? How long to they stay in full bloom?</b>
+          <p>
+            On average, it takes around a week for the cherry blossoms to go from first bloom to full bloom.
+            Once reaching full bloom, the cherry blossoms are expected to stay in full bloom for 1 to 2 weeks.
+            So be sure to plan for a March trip if you are visiting Southern Japan, an early April trip if you plan to
+            visit central Japan, and a mid-April trip if you plan to visit Northern Japan.
+          </p>
+          <div class="b2">Stay updated with <a href="https://sakura.weathermap.jp/en.php">blooming date forecasts</a>
+            released by the Japan Meteorological Agency.
+          </div>
+        </div>
+    
+  </section>
+
+  <!---------------------------------------------------------------->
+  <!----------------------- TOURISM SECTION ------------------------>
+  <!---------------------------------------------------------------->
+  <section>
+
+      <div class="column-container">
+        <div class="reveal fade-bottom">
+          <div class="column-header">
+            <header>
+              <div class="title">
+                <h1>Cherry Blossom Season</h1>
+                <h2>Tourism in Japan</h2>
+              </div>
+            </header>
+            <div class="cherry-tree">
+              <img src="assets/img/branches.png" alt="" />
+              <img src="assets/img/half-bloom.png" alt="" />
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="column-content">
+
+          <b>Which countries visit Japan more during the blooming season compared to the non-blooming season?</b>
+          <p>
+            Below is a plot featuring the top 15 countries from which Japan receives the most visitors (from Japan
+            tourism data from 1990 - 2022).
+            The bars indicate the percent difference in average monthly visits from each country to Japan between
+            blooming season (March - May) and non-blooming season.
+
+          </p>
+          <div class='tableauPlaceholder' id='viz1651095454735' style='position: relative'>
+            <noscript>
+              <a href='#'>
+                <img
+                  alt='Percent Difference of Average Monthly Visitors to Japan between Blooming Season and Non-Blooming Season:  '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16510939061200&#47;Sheet1&#47;1_rss.png'
+                  style='border: none' />
+              </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='Book1_16510939061200&#47;Sheet1' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16510939061200&#47;Sheet1&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+              <param name='filter' value='publish=yes' />
+            </object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1651095454735');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+
+
+          We see that countries like Thailand and Malaysia on average send more travelers to Japan during the blooming
+          season than other countries.
         </div>
       </div>
-    </div>
-
-    <div class="column-content">
-      <div id="chart">
-        <script src="js/script.js"> </script>
-      </div>
-
-      <div class="smallnote">*According to the Japan Meteorology Agency,
-         "first bloom" refers to when observation trees have 5 to 6 flowers that have bloomed and
-          "full bloom" refers to when 80% of the observation tree flowers have bloomed.
-      </div>
-      <b>When do cherry blossoms bloom in Japan?</b>
-      <p>
-        Most cherry blossom first bloom dates in Japan fall in March, April, or May.
-        Over the years, more flowers are first blooming in March, while less and less have first bloom dates falling in April or May.
-        In 2021, 78.46% of the cherry blossoms observed had a first bloom date in March. This is a stark contrast from 1953, where only 30.32% of the cherry blossoms first bloomed in March.
-      </p>
-      <div class="b2"> If you are visiting the main popular cities (Tokyo, Kyoto, Osaka), you should travel in late March or early April to catch most of the blooming beauties.</div>
-      <div class='tableauPlaceholder' id='viz1650967207243' style='position: relative'>
-        <noscript>
-          <a href='#'>
-            <img alt='Avg Days to Full Bloom ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;As&#47;Assignment5_EDA&#47;AvgDaystoFullBloom&#47;1_rss.png' style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz'  style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-          <param name='embed_code_version' value='3' /> 
-          <param name='site_root' value='' />
-          <param name='name' value='Assignment5_EDA&#47;AvgDaystoFullBloom' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;As&#47;Assignment5_EDA&#47;AvgDaystoFullBloom&#47;1.png' /> 
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>
-      </div>
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1650967207243');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='625px';vizElement.style.height='827px';} 
-        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='625px';vizElement.style.height='827px';} 
-        else { vizElement.style.width='100%';vizElement.style.height='727px';}
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-
-      <b>How long does it take for the flowers to fully bloom? How long to they stay in full bloom?</b>
-      <p>
-        On average, it takes around a week for the cherry blossoms to go from first bloom to full bloom.
-        Once reaching full bloom, the cherry blossoms are expected to stay in full bloom for 1 to 2 weeks.
-        So be sure to plan for a March trip if you are visiting Southern Japan, an early April trip if you plan to visit central Japan, and a mid-April trip if you plan to visit Northern Japan.
-      </p>
-      <div class="b2">Stay updated with <a href="https://sakura.weathermap.jp/en.php">blooming date forecasts</a> released by the Japan Meteorological Agency.</div>
-    </div>
-  </div>
-  </div>
   </section>
   <!---------------------------------------------------------------->
   <!--------------------- TRIP ADVISOR SECTION --------------------->
   <!---------------------------------------------------------------->
 
   <section>
-  <div class="reveal fade-bottom">
-  <div class="column-container">
-    <div class="column-header">
-      <header>
-        <!-- <div class="title"> -->
-          <h1>What They Talk About When They Talk About
-          </h1>
-          <h1>
-          </h1>
-          <h2>Cherry Blossoms </h2>
-        <!-- </div> -->
-      </header>
+    <div class="column-container">
+      <div class="reveal fade-bottom">
+        <div class="column-header">
+          <header>
+            <div class="title">
+              <h1>What They Talk About</h1>
+              <h1>When They Talk About</h1>
+              <h2>Cherry Blossoms </h2>
+            </div>
+          </header>
+        </div>
+      </div>
+
+        <div class="column-content">
+          <div class="content">
+            <p>Cherry blossoms, or sakura, have always been in a significant position in Japanese culture, which
+              symbolizes birth and death, beauty and violence.<br><br>
+
+              In order to better understand the meaning and significance of the experience of cherry blossom viewing
+              (hanami) in Japanese culture, we collected a tremendous amount of reviews from <img
+                src="assets/img/Tripadvisor_logo.svg"
+                style="border: 0; display:inline; margin: 0; transform: translateY(5px); height: 20px; box-shadow: none">,
+              and found the most frequently used vocabulary, which we believe indicates what they care about the most
+              when it comes to hanami. Here are some of our findings.
+              <br><br>
+            </p>
+          </div>
+
+          <div class="content">
+            <h3>Attention to Location/Environment <br><br></h3>
+
+            <p>From the list of the most frequently used words, we can see a lot of words that are used to specify the
+              location, such as “名所 (famous place)”, “寺 (shrine/temple)”, “公園 (park)”, and the names of cities. It’s not
+              hard to infer that the location where the activity takes place is the core of the experience. Even if it
+              means they have to squeeze in with all the other hanami goers in an outrageously crowded place, they would
+              still value the experience of hanami at a popular spot.
+              <br><br>
+            </p>
+          </div>
+
+          <div class='tableauPlaceholder' id='viz1650999226880' style='position: relative; height:400px ;width:120%'>
+            <noscript>
+              <a href='#'>
+                <img alt='Sheet 1 '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ch&#47;cherry-blossom-word-count&#47;Sheet1&#47;1_rss.png'
+                  style='border: none' />
+              </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='cherry-blossom-word-count&#47;Sheet1' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ch&#47;cherry-blossom-word-count&#47;Sheet1&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+            </object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1650999226880');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+
+          <div class="content">
+            <h3><br>Urban over Country<br>Controlled over Natural<br><br></h3>
+
+            <p>Inspired by the finding, we explored a little further into the locations. We found that, out of 100 most
+              popular hanami spots on TripAdvisor, the spots in urban settings significantly outnumbered those in rural
+              settings, while those in controlled environments, such as parks, shrines, and gardens, also outnumbered
+              those in natural settings. <br><br>
+            </p>
+          </div>
+
+          <div style="transform: translateY(-50px);">
+            <div class="dropdown">
+              <form class="attr">
+                <label for="attr">Attraction: </label>
+                <select name="attr" id="attr" onchange="selectChanged()">
+                  <option value="">All</option>
+                  <option value="shrine">Shrine</option>
+                  <option value="castle">Castle</option>
+                  <option value="garden">Garden</option>
+                  <option value="park">Park</option>
+                  <option value="water">Water</option>
+                  <option value="mountain">Mountain</option>
+                </select>
+              </form>
+
+              <form class="setting">
+                <label for="setting">Setting: </label>
+                <select name="setting" id="setting" onchange="selectChanged()">
+                  <option value="">All</option>
+                  <option value="city">City</option>
+                  <option value="country">Country</option>
+                </select>
+              </form>
+
+
+              <form class="region">
+                <label for="region">Region: </label>
+                <select name="region" id="region" onchange="selectChanged()" width="200px">
+                  <option value="">All</option>
+                  <option value="Kanto">Kanto</option>
+                  <option value="Kinki">Kinki</option>
+                  <option value="Kyushu - Okinawa">Kyushu - Okinawa</option>
+                  <option value="Chubo">Chubo</option>
+                  <option value="Hokkaido">Hokkaido</option>
+                  <option value="Tohoku">Tohoku</option>
+                  <option value="Shikoku">Shikoku</option>
+                  <option value="Chugoku">Chugoku</option>
+                </select>
+              </form>
+
+              <p id="selected-number"></p>
+            </div>
+            <canvas id="japan-container" width="800" height="800">
+          </div>
+
+          <div class="content">
+            <h3>Silence in Mind Overcomes Noisy Crowds<br><br></h3>
+
+
+            <p>Even though most of the hanimi goers experience hanami in a crowded spot located in major urban areas
+              such as Kanto and Kinki, they are still able to enjoy(楽しむ) the beauty(綺麗) of sakura and find the
+              silence(静か) in mind as written in one of the reviews, “The hustle and bustle of the city is forgotten.”
+              （“都会の喧騒を忘れてまったり。”）
+              <br><br>
+            </p>
+
+          </div>
+
+          <div class="quote">
+            <img src="assets/img/quote.png" title="The hustle and bustle of the city is forgotten." />
+          </div>
+        </div>
+      </div>
+
+      <div class="sun cherry-tree">
+        <img src="assets/img/sun.png" alt="" />
+      </div>
+
+      <div class="cherry-tree word-cloud">
+        <img src="assets/img/word-cloud.png" alt="" />
+      </div>
+
+      <div class="cherry-tree branches">
+        <img src="assets/img/branches.png" alt="" />
+      </div>
+
+      <div class="cherry-tree blossoms">
+        <img src="assets/img/blossoms.png" alt="" />
+      </div>
+
+      <div>
+        <div class="real-word w1" title="花見 n. &#010cherry blossom &#010frequency: 297">
+          花見
+        </div>
+        <div class="real-word w2" title="桜 n. &#010cherry blossom viewing &#010frequency: 874">
+          桜
+        </div>
+        <div class="real-word w3" title="名所 n. &#010famous place&#010frequency: 201">
+          名所
+        </div>
+        <div class="real-word w4" title="満開 n. &#010full bloom&#010frequency: 149">
+          満開
+        </div>
+        <div class="real-word w5" title="公園 n. &#010park&#010frequency: 96">
+          公園
+        </div>
+        <div class="real-word w6" title="寺 n. &#010shrine&#010frequency: 70">
+          寺
+        </div>
+        <div class="real-word w7" title="都会 n. &#010urban&#010frequency: 61">
+          都会
+        </div>
+        <div class="real-word w8" title="行く v. &#010go&#010frequency: 44">
+          行く
+        </div>
+        <div class="real-word w9" title="見る v. &#010look&#010frequency: 26">
+          見る
+        </div>
+        <div class="real-word w10" title="楽しむ v. &#010enjoy&#010frequency: 26">
+          楽しむ
+        </div>
+        <div class="real-word w11" title="楽しめる v. &#010can enjoy&#010frequency: 26">
+          楽しめる
+        </div>
+        <div class="real-word w12" title="咲く v. &#010bloom&#010frequency: 17">
+          咲く
+        </div>
+        <div class="real-word w13" title="並ぶ v. &#010line up&#010frequency: 17">
+          並ぶ
+        </div>
+        <div class="real-word w14" title="見れる v. &#010can see&#010frequency: 17">
+          見れる
+        </div>
+        <div class="real-word w15" title="広大 adj. &#010vast&#010frequency: 44">
+          広大
+        </div>
+        <div class="real-word w16" title="綺麗 adj. &#010pretty&#010frequency: 44">
+          綺麗
+        </div>
+        <div class="real-word w17" title="素晴らしい adj. &#010amazing&#010frequency: 35">
+          素晴らしい
+        </div>
+        <div class="real-word w18" title="早い adj. &#010quick&#010frequency: 26">
+          早い
+        </div>
+        <div class="real-word w19" title="静か adj. &#010silent&#010frequency: 26">
+          静か
+        </div>
+        <div class="real-word w20" title="良い adj. &#010good&#010frequency: 26">
+          良い
+        </div>
+        <div class="real-word w21" title="美しい adj. &#010beautiful&#010frequency: 26">
+          美しい
+        </div>
+      </div>
+
+      <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+      <script src="https://unpkg.com/topojson@3"></script>
+      <script src="js/d3Chart.js"></script>
+      <script src="js/main.js"></script>
     </div>
-
-    <div class="column-content">
-      <div class="content">
-      <p>Cherry blossoms, or sakura, have always been in a significant position in Japanese culture, which symbolizes birth and death, beauty and violence.<br><br>
-
-        In order to better understand the meaning and significance of the experience of cherry blossom viewing (hanami) in Japanese culture, we collected a tremendous amount of reviews from <img src="img/Tripadvisor_logo.svg" style="border: 0; display:inline; margin: 0; transform: translateY(5px); height: 20px; box-shadow: none">, and found the most frequently used vocabulary, which we believe indicates what they care about the most when it comes to hanami. Here are some of our findings.
-      <br><br>
-      </p>
-      </div>
-
-      <div class="content">
-      <h3>Attention to Location/Environment <br><br></h3>
-
-      <p>From the list of the most frequently used words, we can see a lot of words that are used to specify the location, such as “名所 (famous place)”, “寺 (shrine/temple)”, “公園 (park)”, and the names of cities. It’s not hard to infer that the location where the activity takes place is the core of the experience. Even if it means they have to squeeze in with all the other hanami goers in an outrageously crowded place, they would still value the experience of hanami at a popular spot.
-      <br><br>
-      </p>
-      </div>
-
-      <div class='tableauPlaceholder' id='viz1650999226880' style='position: relative; height:400px ;width:120%'>
-        <noscript>
-          <a href='#'>
-            <img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ch&#47;cherry-blossom-word-count&#47;Sheet1&#47;1_rss.png' style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-            <param name='embed_code_version' value='3' /> 
-            <param name='site_root' value='' />
-            <param name='name' value='cherry-blossom-word-count&#47;Sheet1' />
-            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ch&#47;cherry-blossom-word-count&#47;Sheet1&#47;1.png' /> 
-            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' /><param name='language' value='en-US' />
-        </object>
-      </div>                
-      <script type='text/javascript'>                    
-        var divElement = document.getElementById('viz1650999226880');                    
-        var vizElement = divElement.getElementsByTagName('object')[0];                    
-        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-        var scriptElement = document.createElement('script');                    
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-      </script>  
-
-      <div class="content">
-      <h3><br>Urban over Country<br>Controlled over Natural<br><br></h3>  
-
-      <p>Inspired by the finding, we explored a little further into the locations. We found that, out of 100 most popular hanami spots on TripAdvisor, the spots in urban settings significantly outnumbered those in rural settings, while those in controlled environments, such as parks, shrines, and gardens, also outnumbered those in natural settings.          <br><br>
-      </p>
-      </div>
-
-      <div style="transform: translateY(-50px);">
-      <div class="dropdown">
-        <form class="attr">
-          <label for="attr">Attraction: </label>
-          <select name="attr" id="attr" onchange="selectChanged()">
-            <option value="">All</option>
-            <option value="shrine">Shrine</option>
-            <option value="castle">Castle</option>
-            <option value="garden">Garden</option>
-            <option value="park">Park</option>
-            <option value="water">Water</option>
-            <option value="mountain">Mountain</option>
-          </select>
-        </form>
-
-        <form class="setting">
-          <label for="setting">Setting: </label>
-          <select name="setting" id="setting" onchange="selectChanged()">
-            <option value="">All</option>
-            <option value="city">City</option>
-            <option value="country">Country</option>
-          </select>
-        </form>    
-        
-        
-        <form class="region">
-          <label for="region">Region: </label>
-          <select name="region" id="region" onchange="selectChanged()" width="200px">
-            <option value="">All</option>
-            <option value="Kanto">Kanto</option>
-            <option value="Kinki">Kinki</option>
-            <option value="Kyushu - Okinawa">Kyushu - Okinawa</option>
-            <option value="Chubo">Chubo</option>
-            <option value="Hokkaido">Hokkaido</option>
-            <option value="Tohoku">Tohoku</option>
-            <option value="Shikoku">Shikoku</option>
-            <option value="Chugoku">Chugoku</option>                         
-          </select>
-        </form> 
-        
-        <p id="selected-number"></p>
-      </div>
-      <canvas id="japan-container" width="800" height="800" >
-      </div>
-
-      <div class="content">
-      <h3>Silence in Mind Overcomes Noisy Crowds<br><br></h3>
-
-      
-      <p>Even though most of the hanimi goers experience hanami in a crowded spot  located in major urban areas such as Kanto and Kinki, they are still able to enjoy(楽しむ) the beauty(綺麗) of sakura and find the silence(静か) in mind as written in one of the reviews, “The hustle and bustle of the city is forgotten.”
-        （“都会の喧騒を忘れてまったり。”）
-        <br><br>
-      </p>
-      
-      </div>
-
-      <div class="quote">
-        <img src="assets/img/quote.png" title="The hustle and bustle of the city is forgotten."/>
-      </div>
-
-      
-
-
-
-    </div>
-  </div>
-
-  <div class="sun cherry-tree">
-    <img src="assets/img/sun.png" alt=""/>
-  </div>
-  
-    <div class="cherry-tree word-cloud">
-      <img src="assets/img/word-cloud.png" alt=""/>
-    </div>
-
-    <div class="cherry-tree branches">
-        <img src="assets/img/branches.png" alt=""/>
-    </div>
-    
-    <div class="cherry-tree blossoms">
-      <img src="assets/img/blossoms.png" alt=""/>
-    </div>
-          
-    <div>
-      <div class="real-word w1" title="花見 n. &#010cherry blossom &#010frequency: 297">
-        花見
-      </div>
-      <div class="real-word w2" title="桜 n. &#010cherry blossom viewing &#010frequency: 874">
-        桜
-      </div>
-      <div class="real-word w3" title="名所 n. &#010famous place&#010frequency: 201">
-        名所
-      </div>
-      <div class="real-word w4" title="満開 n. &#010full bloom&#010frequency: 149">
-        満開
-      </div>
-      <div class="real-word w5" title="公園 n. &#010park&#010frequency: 96">
-        公園
-      </div>
-      <div class="real-word w6" title="寺 n. &#010shrine&#010frequency: 70">
-        寺
-      </div>
-      <div class="real-word w7" title="都会 n. &#010urban&#010frequency: 61">
-        都会
-      </div>
-      <div class="real-word w8" title="行く v. &#010go&#010frequency: 44">
-        行く
-      </div>
-      <div class="real-word w9" title="見る v. &#010look&#010frequency: 26">
-        見る
-      </div>
-      <div class="real-word w10" title="楽しむ v. &#010enjoy&#010frequency: 26">
-        楽しむ
-      </div>
-      <div class="real-word w11" title="楽しめる v. &#010can enjoy&#010frequency: 26">
-        楽しめる
-      </div>
-      <div class="real-word w12" title="咲く v. &#010bloom&#010frequency: 17">
-        咲く
-      </div>
-      <div class="real-word w13" title="並ぶ v. &#010line up&#010frequency: 17">
-        並ぶ
-      </div>
-      <div class="real-word w14" title="見れる v. &#010can see&#010frequency: 17">
-        見れる
-      </div>
-      <div class="real-word w15" title="広大 adj. &#010vast&#010frequency: 44">
-        広大
-      </div>
-      <div class="real-word w16" title="綺麗 adj. &#010pretty&#010frequency: 44">
-        綺麗
-      </div>
-      <div class="real-word w17" title="素晴らしい adj. &#010amazing&#010frequency: 35">
-        素晴らしい
-      </div>
-      <div class="real-word w18" title="早い adj. &#010quick&#010frequency: 26">
-        早い
-      </div>
-      <div class="real-word w19" title="静か adj. &#010silent&#010frequency: 26">
-        静か
-      </div>
-      <div class="real-word w20" title="良い adj. &#010good&#010frequency: 26">
-        良い
-      </div>
-      <div class="real-word w21" title="美しい adj. &#010beautiful&#010frequency: 26">
-        美しい
-      </div>
-    </div>
-
-  <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
-  <script src="https://unpkg.com/topojson@3"></script>
-  <script src="js/d3Chart.js"></script>
-  <script src="js/main.js"></script>
-  </div>
   </section>
 </body>
-</html>
 
+</html>
