@@ -1101,7 +1101,7 @@ var trendMay = [
 const svg = d3
   .select("#chart")
   .append("svg")
-  .attr("height", 400)
+  .attr("height", 450)
   .attr("width", 600);
 // * I changed the margins below *
 const margin = { top: 20, bottom: 50, left: 50, right: 10};
@@ -1253,7 +1253,7 @@ const transitionPathApr = d3
   .transition()
   .ease(d3.easeSin)
 // * I added a delay to the line so that it appears after March's lines*
-  .delay(5000)
+  .delay(7500)
   .duration(5000);
 
 // This code is from Louise Moxy
@@ -1283,7 +1283,7 @@ const pathAprTrend = grp
 const transitionPathAprTrend = d3
   .transition()
   .ease(d3.easeSin)
-  .delay(5050)
+  .delay(7550)
   .duration(5700);
 
 pathAprTrend
@@ -1353,7 +1353,7 @@ const transitionPathMay = d3
 // *I added a longer delay and transition so that it appears after March and April's lines*
   .transition()
   .ease(d3.easeSin)
-  .delay(10100)
+  .delay(7500)
   .duration(5000);
 
 // This code is from Louise Moxy
@@ -1383,8 +1383,8 @@ const pathMayTrend = grp
 const transitionPathMayTrend = d3
   .transition()
   .ease(d3.easeSin)
-  .delay(10000)
-  .duration(5500);
+  .delay(7550)
+  .duration(5700);
 
 pathMayTrend
   // This code is from Ruben Helsloot here: https://stackoverflow.com/questions/64601357/d3-animating-multiple-lines-the-line-cant-be-completed
@@ -1467,13 +1467,13 @@ chart
 chart
   .append("text")
   .attr("text-anchor", "end")
-  .attr("x", -150)
+  .attr("x", -50)
   .attr("y", -50)
   .attr("dy", "1em")
   .attr("transform", "rotate(-90)")
   .attr("font-family", "sans-serif")
   .attr("font-size", 14)
-  .text("Proportion");
+  .text("Percentage of First Blooms Occuring in Spring Month");
 
 // Add title
 chart
@@ -1483,13 +1483,13 @@ chart
   .attr("text-anchor", "middle")  
   .attr("font-family", "sans-serif")
   .attr("font-size", 16) 
-  .text("Proportions of First Bloom Dates Falling in March, April, and May");
+  .text("Cherry Blossom Blooming Patterns");
   
 // Add legend
 // For March
 chart 
   .append('rect')
-  .attr('x', 420)
+  .attr('x', 50)
   .attr('y', 25)
 
   .attr('width', 10)
@@ -1499,7 +1499,7 @@ chart
 
 chart
   .append('text')
-  .attr('x', 440)
+  .attr('x', 70)
   .attr('y', 34)
   .attr("text-anchor", "bottom")
   .attr("font-family", "sans-serif")
@@ -1509,11 +1509,11 @@ chart
 // For April
 chart 
   .append('rect')
-  .attr('x', 420)
+  .attr('x', 50)
   .attr('y', 38)
   .style("opacity", 0)
   .transition()
-  .delay(5100)
+  .delay(7500)
   .style("opacity", 1)
   .attr('width', 10)
   .attr('height', 10)
@@ -1522,11 +1522,11 @@ chart
 
 chart
   .append('text')
-  .attr('x', 440)
+  .attr('x', 70)
   .attr('y', 48)
   .style("opacity", 0)
   .transition()
-  .delay(5100)
+  .delay(7500)
   .style("opacity", 1)
   .attr("text-anchor", "bottom")
   .attr("font-family", "sans-serif")
@@ -1536,11 +1536,11 @@ chart
 // For May
 chart 
   .append('rect')
-  .attr('x', 420)
+  .attr('x', 50)
   .attr('y', 51)
   .style("opacity", 0)
   .transition()
-  .delay(10100)
+  .delay(7500)
   .style("opacity", 1)
   .attr('width', 10)
   .attr('height', 10)
@@ -1549,14 +1549,161 @@ chart
 
 chart
   .append('text')
-  .attr('x', 440)
+  .attr('x', 70)
   .attr('y', 61)
   .style("opacity", 0)
   .transition()
-  .delay(10100)
+  .delay(7500)
   .style("opacity", 1)
   .attr("text-anchor", "bottom")
   .attr("font-family", "sans-serif")
   .attr("font-size", 12) 
   .text("May");
 
+
+// Add annotation to the chart
+chart
+    .append('line')
+    .style("opacity", 0)
+    .transition()
+    .delay(5120)
+    .style("opacity", 1)
+    .style("stroke", "lightgray")
+    .style("stroke-width", 1)
+    .attr("x1", 430)
+    .attr("y1", 85)
+    .attr("x2",480)
+    .attr("y2", 148);
+
+chart
+  .append('rect')
+  .attr('x', 350)
+  .attr('y', 45)
+  .style("opacity", 0)
+  .transition()
+  .delay(5120)
+  .style("opacity", 1)
+  .attr('width', 150)
+  .attr('height', 40)
+  .attr('stroke', 'lightgray')
+  .attr('fill', 'white');
+
+chart
+  .append('text')
+  .attr('x', 355)
+  .attr('y', 57)
+  .style("opacity", 0)
+  .transition()
+  .delay(5120)
+  .style("opacity", 1)
+  .attr("text-anchor", "bottom")
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 12) 
+  .text("Despite yearly fluctuations,")
+
+chart
+  .append('text')
+  .attr('x', 355)
+  .attr('y', 69)
+  .style("opacity", 0)
+  .transition()
+  .delay(5120)
+  .style("opacity", 1)
+  .attr("text-anchor", "bottom")
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 12) 
+  .text("more flowers are now")
+
+chart
+  .append('text')
+  .attr('x', 355)
+  .attr('y', 81)
+  .style("opacity", 0)
+  .transition()
+  .delay(5120)
+  .style("opacity", 1)
+  .attr("text-anchor", "bottom")
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 12) 
+  .text("blooming early - in March")
+
+// "Hence, less flowers are blooming in April and May"
+
+// Add annotation to the chart
+chart
+    .append('line')
+    .style("opacity", 0)
+    .transition()
+    .delay(13000)
+    .style("opacity", 1)
+    .style("stroke", "lightgray")
+    .style("stroke-width", 1)
+    .attr("x1", 450)
+    .attr("y1", 231)
+    .attr("x2",453)
+    .attr("y2", 355);
+
+chart
+    .append('line')
+    .style("opacity", 0)
+    .transition()
+    .delay(13000)
+    .style("opacity", 1)
+    .style("stroke", "lightgray")
+    .style("stroke-width", 1)
+    .attr("x1", 480)
+    .attr("y1", 315)
+    .attr("x2",450)
+    .attr("y2", 355);
+
+chart
+  .append('rect')
+  .attr('x', 400)
+  .attr('y', 350)
+  .style("opacity", 0)
+  .transition()
+  .delay(13000)
+  .style("opacity", 1)
+  .attr('width', 115)
+  .attr('height', 40)
+  .attr('stroke', 'lightgray')
+  .attr('fill', 'white');
+
+chart
+  .append('text')
+  .attr('x', 405)
+  .attr('y', 362)
+  .style("opacity", 0)
+  .transition()
+  .delay(13000)
+  .style("opacity", 1)
+  .attr("text-anchor", "bottom")
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 12) 
+  .text("Hence, less flowers")
+
+chart
+  .append('text')
+  .attr('x', 405)
+  .attr('y', 374)
+  .style("opacity", 0)
+  .transition()
+  .delay(13000)
+  .style("opacity", 1)
+  .attr("text-anchor", "bottom")
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 12) 
+  .text("are blooming in")
+
+chart
+  .append('text')
+  .attr('x', 405)
+  .attr('y', 386)
+  .style("opacity", 0)
+  .transition()
+  .delay(13000)
+  .style("opacity", 1)
+  .attr("text-anchor", "bottom")
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 12) 
+  .text("April and May")
