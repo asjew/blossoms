@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 1280px;
+  color: #3b3b3b;
+  font-size: 24px;
+}
+
+/* p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover {
+  color: teal;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+} */
+
+/* Blooming Pattern */
+.smallnote {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom:10px;
+}
+
+b {
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  color: #A67277;
+}
+
+.b2 {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  color: #BC8F8F;
+}
+/* Tourism */
+
+/* Tripadvisor */
+/* title */
+
+.title {
+  position: absolute;
+  top:0;
+  margin: 10px;
+  left: 0;
+}
+
+.title #h1 {
+  text-align: justify;
+  text-justify: inter-character;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.9vw;
+  line-height: 3.5vw;
+  
+  color: #000000;
+  
+}
+
+.title #h2{
+  text-align: justify;
+  text-justify: inter-character;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 5vw;
+  color: #A27378;
+}
+
+.title #h3{
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+#h4{
+  font-size: 12px;
+}
+
+/* Tripadvisor Cherry Tree */
+.cherry-tree{
+  z-index: 100000;
+  transition: 1s;
+}
+
+.cherry-tree img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 1.5px;
+}
+
+
+ .blossoms img:hover{
+  opacity: 0;
+} 
+
+
+.word-cloud{
+  /* opacity: 0%; */
+  display: none;
+}
+
+.blossoms img{
+  /* display:none; */
+  transition: 400ms;
+  
+}
+
+
+.sun img{
+  /* display:none; */
+  bottom: 0;
+  left: 1.5px;
+  z-index: -100;
+}
+
+/* real word */
+.real-word{
+  /* display:none; */
+  position: absolute;
+  font-family: '新細明體';
+  bottom: 0;
+  color: #f9ccdf;
+  transition: 100ms   
+}
+
+.real-word:hover{
+  font-weight: 900;
+  z-index: 1;
+  color: #fe91bf;
+  text-shadow: -1px 1px 0 #ffffff, 0 0 1px #ffffff;
+  transform: scale(1.5);
+}
+
+
+.w1 {
+  left: calc(1.5px + 13vw) ;
+  bottom: 9vw;
+  font-size: 1.7vw;
+  transform: rotate(-65deg);
+}
+
+.w2 {
+  left: calc(1.5px + 16.8vw) ;
+  bottom: 11vw;
+  font-size: 1.9vw;
+  transform: rotate(60deg);
+}
+
+
+.w3 {
+  left: calc(1.5px + 36vw) ;
+  bottom: 7vw;
+  font-size: 1.5vw;
+  transform: rotate(45deg);
+}
+
+
+.w4 {
+  left: calc(1.5px + 27vw) ;
+  bottom: 7.5vw;
+  font-size: 1.5vw;
+  transform: rotate(25deg);
+}
+
+
+.w5 {
+  left: calc(1.5px + 19vw) ;
+  bottom: 17vw;
+  font-size: 1.3vw;
+  transform: rotate(50deg);
+}
+
+
+.w6 {
+  left: calc(1.5px + 16vw) ;
+  bottom: 16vw;
+  font-size: 1.2vw;
+  transform: rotate(25deg);
+}
+
+
+.w7 {
+  left: calc(1.5px + 27.5vw) ;
+  bottom: 14vw;
+  font-size: 1.2vw;
+  transform: rotate(20deg);
+}
+
+
+.w8 {
+  left: calc(1.5px + 20vw) ;
+  bottom: 26vw;
+  font-size: 1.1vw;
+  transform: rotate(20deg);
+}
+
+
+.w9 {
+  left: calc(1.5px + 22.5vw) ;
+  bottom: 30vw;
+  font-size: 0.9vw;
+  transform: rotate(-50deg);
+}
+
+
+.w10 {
+  left: calc(1.5px + 10vw) ;
+  bottom: 15vw;
+  font-size: 0.9vw;
+  transform: rotate(-80deg);
+}
+
+
+.w11 {
+  left: calc(1.5px + 16vw) ;
+  bottom: 30vw;
+  font-size: .9vw;
+  transform: rotate(-15deg);
+}
+
+
+.w12 {
+  left: calc(1.5px + 27vw) ;
+  bottom: 11.5vw;
+  font-size: .8vw;
+  transform: rotate(-20deg);
+}
+
+
+.w13 {
+  left: calc(1.5px + 19.5vw) ;
+  bottom: 29vw;
+  font-size: .8vw;
+  transform: rotate(-40deg);
+}
+
+
+.w14 {
+  left: calc(1.5px + 21.5vw) ;
+  bottom: 31.5vw;
+  font-size: .8vw;
+  transform: rotate(-60deg);
+}
+
+
+.w15 {
+  left: calc(1.5px + 19vw) ;
+  bottom: 21.5vw;
+  font-size: 1.1vw;
+  transform: rotate(-30deg);
+}
+
+.w16 {
+  left: calc(1.5px + 11vw) ;
+  bottom: 17.5vw;
+  font-size: 1.1vw;
+  transform: rotate(50deg);
+}
+
+.w17 {
+  left: calc(1.5px + 18vw) ;
+  bottom: 10.5vw;
+  font-size: 1vw;
+  transform: rotate(-20deg);
+}
+
+.w18 {
+  left: calc(1.5px + 24vw) ;
+  bottom: 25.5vw;
+  font-size: 0.9vw;
+  transform: rotate(30deg);
+}
+
+.w19 {
+  left: calc(1.5px + 22vw) ;
+  bottom: 9vw;
+  font-size: .9vw;
+  transform: rotate(-20deg);
+}
+
+.w20 {
+  left: calc(1.5px + 26vw) ;
+  bottom: 12.5vw;
+  font-size: .9vw;
+  transform: rotate(-20deg);
+}
+
+.w21 {
+  left: calc(1.5px + 17.5vw) ;
+  bottom: 22.25vw;
+  font-size: .9vw;
+  transform: rotate(-23deg);
+}
+
+/* tooltip */
+
+.tooltiptext {
+  visibility: hidden;
+  inline-size: min-content;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 8px;
+  text-shadow: none;
+  font-family: 'Arial';
+  font-weight: 100;
+
+  /* Position the tooltip */
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 200ms;
+  transition-delay:100ms;
+}
+
+.real-word:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* quote */
+
+.quote img{
+  height: 90vh;
+  display: block;
+  margin: auto;
+  transition: 600ms;
+}
+
+.quote{
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28vh;
+}
+
+.quote:hover .quote-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.quote:hover img {
+  opacity: 50%;
+}
+
+.quote-tooltiptext {
+  /* visibility: hidden; */
+  inline-size: min-content;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 12px;
+  text-shadow: none;
+  font-family: 'Arial';
+
+  /* Position the tooltip */
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 300ms;
+  transition-delay:100ms;
+
+  white-space: nowrap
+}
+
+/* Content text */
+.content {
+  margin: 40px;
+  margin-bottom: 20px;
+  z-index: 100000;
+}
+
+p, label{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  line-height: 30px;
+  color: #021718;
+  width: 100%;
+  
+}
+
+h3{
+  color: #A27378;
+}
