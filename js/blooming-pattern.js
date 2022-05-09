@@ -1476,7 +1476,7 @@ var dataMar = [
     .attr("transform", "rotate(-90)")
     .attr("font-family", "sans-serif")
     .attr("font-size", 14)
-    .text("Percentage of First Blooms Occuring in Spring Month");
+    .text("Percentage of First Blooms Occuring in Spring Months");
   
   // Add title
   chart
@@ -1667,7 +1667,7 @@ var dataMar = [
     .transition()
     .delay(13000)
     .style("opacity", 1)
-    .attr('width', 115)
+    .attr('width', 119)
     .attr('height', 40)
     .attr('stroke', 'lightgray')
     .attr('fill', 'white');
@@ -1683,7 +1683,7 @@ var dataMar = [
     .attr("text-anchor", "bottom")
     .attr("font-family", "sans-serif")
     .attr("font-size", 12) 
-    .text("Hence, less flowers")
+    .text("Hence, fewer flowers")
   
   chart
     .append('text')
